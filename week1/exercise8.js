@@ -18,5 +18,5 @@ var newArray = [x, y, z, a];
 if (typeOF(newArray[]) === typeOf(newArray[])) {
     console.log("They are the same type");
 } else {
-    console.log("They are not the same type");s
+    console.log("They are not the same type");
 }
