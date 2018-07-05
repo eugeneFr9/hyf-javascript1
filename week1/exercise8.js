@@ -14,9 +14,16 @@ console.log('The type of my variable z is: Boolean');
 console.log('The type of my variable z is: ' + typeof(z));
 console.log('The type of my variable a is: Object');
 console.log('The type of my variable a is: ' + typeof(a));
-var newArray = [x, y, z, a];
-if (typeOF(newArray[]) === typeOf(newArray[])) {
-    console.log("They are the same type");
+var typeX = typeof(x);
+var typeY = typeof(y);
+var typeZ = typeof(z);
+var typeA = typeof(a);
+if ((typeX === typeY) || (typeX === typeZ) || (typeX === typeA)) {
+    console.log("Variable x has the same type");
+} else if ((typeY === typeZ) || (typeY === typeA)) {
+        console.log("Varibale y has the same type");
+} else if (typeZ === typeA) {
+    console.log("VAriable Z has the same type");
 } else {
     console.log("They are not the same type");
 }
