@@ -21,7 +21,7 @@ console.log(o3);
 console.log("o3 changed")
 
 //Does the order that you assign(o3 = o2 or o2 = o3) matter ?
-console.log("Yes, of course, o3 now is exactly the same object as o2,02 was defined first");
+console.log("Doesnt matter");
 //17. What does the following code return? (And why?)
 let bar = 42;
 typeof typeof bar;
