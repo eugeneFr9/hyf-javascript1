@@ -15,13 +15,18 @@ function vehicle(color, code, age) {
 So that it prints something like:
 "Amazing Joe's Garage, we service cars, motorbikes, 
 caravans and bikes."*/
-function advertisment (array) {
-    var string = "";
-    for (i = 0; i < array.length; i++) {
-        string = string + vehicles[i] + ", ";
-    };
-    console.log("Amazing Joe's Garage, we service " + string
-        + ".");
+function advertisment (vehicles) {
+   let advertisment = "Amazing Joe's Garage, we service ";
+   let firstVehicles = "vehicles.slice(0, vehicles.length - 1);
+   let lastVehicle = vehicles[vehicles.length - 1];
+      if (vehicles.length === 1) {
+         return advertisment + vehicles[0];
+      } else {
+         return advertisment + firstVehicles.join(',') + " and " + lastVehicle;
+      }
+}
+            
+    console.log(advertisment(vehicles));
 
 /*11. What if you add one more vehicle to the list, can you 
 have that added to the advertisement without changing the 
